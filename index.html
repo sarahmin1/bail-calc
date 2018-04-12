@@ -7,13 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- first step to a responsive site -->
-    <title>Functions and Calculators</title>
+    <title>How many years will it take to own a home with student debt in NYC?</title>
 
     <!-- FONT AWESOME -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Your styles should be called here -->
-    <link href="style.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,17 +26,35 @@
   <body>
     <!-- YOUR CONTENT GOES HERE -->
     <div class="container">
-      <h1>Don't Have Bail Money? How Long Will You Wait for a Trial at Rikers Island?</h1>
-      <p>The following calculator will help you estimate how long you will wait for a trial at Rikers Island, depending on the charge and your income and savings.</p>
+      <!-- needs a span -->
+      <h1><span class="headline">How many years will it take to own a home with student debt in NYC</span></h1>
+      <p>The following calculator will help you determine the number of years it will take for someone to afford the average down payment in a borough.</p>
 
-      <p class="small">This is a loose estimate and is designed to show a loose impact rather than an exact change.</p>
+      <p class="small">Based on an estimate of annual inflation rates on housing.</p>
 
-      <p>I am a <input type="text" class="age" id="Age" data-price="2.50" data-calories="600" placeholder="Age!" /> years old and a <input type="text" class="age" id="Gender" data-price="2.50" data-calories="600" placeholder="Gender!" /> in <input type="text"
-          class="age" id="Prison" data-price="2.50" data-calories="600" placeholder="Prison!" />. I have been convicted with a <input type="text" class="charge1" id="charge1" data-price="2.50" data-calories="600" placeholder="charge1!" />, a <input type="text"
-          class="charge2" id="charge2" data-price="2.50" data-calories="600" placeholder="charge2!" /> and a <input type="text" class="charge3" id="charge3" data-price="2.50" data-calories="600" placeholder="charge3!" />. I have <input type="text" class="amountSavings"
-          id="Age" data-price="2.50" data-calories="600" placeholder="amountSavings" /> saved up in my bank account.</p>
+      <p>I earn <input class="qty" type="number" /></p>
 
-      <p>I will get out of Rikers in 3 years.</p>
+      <!-- <p>I am a (DROP_DOWN: GENDER)</p> -->
+
+      <p>Monthly Rent
+        <div class="qty" type="number" />
+      </p>
+      <p>Average Expenses<input class="qty" type="number" /></p>
+      <p>Monthly College Loans<input class="qty" type="number" /></p>
+
+      <form>
+        <p>I want to live in</p>
+        <select name="borough-pulldown">
+            <option value="Select One"  selected>Select One</option>
+            <option value="Brooklyn">Brooklyn</option>
+            <option value="Bronx">Bronx</option>
+            <option value="Manhattan">Manhattan</option>
+            <option value="Queens">Queens</option>
+            <option value="Staten Island">Staten Island</option>
+          </select>
+      </form>
+
+      <p>It will take you</p>
 
       <!-- the jQuery library. You need this to be able to use jQuery ($) -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
